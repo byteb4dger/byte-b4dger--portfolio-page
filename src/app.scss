@@ -1,0 +1,62 @@
+$text: #d6d8fa;
+$background: #02030e;
+$primary: #7b7dee;
+$secondary: #841498;
+$accent: #e538c5;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  width: 100svw;
+  scroll-snap-align: center;
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin custom-about {
+  @media (max-width: 1574px) {
+    @content;
+  }
+}
+
+@mixin custom {
+  @media (max-width: 1637px) {
+    @content;
+  }
+}
