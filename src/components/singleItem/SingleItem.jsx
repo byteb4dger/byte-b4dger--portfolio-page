@@ -8,9 +8,14 @@ const SingleItem = ({ item }) => {
         <div className="textContainer">
           <h1>{item.title}</h1>
           <p>{item.desc}</p>
+          <span>{item.stack}</span>
           <div className="buttons">
-            <button>See Demo</button>
-            <button>See Repo</button>
+            <button>
+              <a href={item.url}>Odwiedź stronę</a>
+            </button>
+            <button>
+              <a href={item.repo}>Sprawdź repozytorium</a>
+            </button>
           </div>
         </div>
       </div>
