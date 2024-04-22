@@ -1,7 +1,8 @@
+import { SiReaddotcv } from "react-icons/si";
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
-import { FaFacebook, FaTwitter, FaGithub } from "react-icons/fa6";
+import { FaFacebook, FaGithub } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -21,8 +22,8 @@ const Navbar = () => {
           <a href="https://www.facebook.com/piotr.gulaszewski.56">
             <FaFacebook />
           </a>
-          <a href="https://twitter.com/RaduchaPiotr">
-            <FaTwitter />
+          <a href="https://resume.io/r/7LBo7tLTm">
+            <SiReaddotcv />
           </a>
           <a href="https://github.com/byteb4dger?tab=repositories">
             <FaGithub />
