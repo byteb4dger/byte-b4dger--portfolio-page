@@ -35,10 +35,10 @@ const Contact = () => {
         "8w2m8CMq6-Mp1w5ch"
       )
       .then(
-        (result) => {
+        () => {
           setSuccess(true);
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );
@@ -53,18 +53,18 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>Napisz do mnie </motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <h2>Email</h2>
+          <span>raduchapiotr6@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>Adres</h2>
+          <span>Warszawa</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <h2>Telefon</h2>
+          <span>789 417 103</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -75,10 +75,10 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
+          <input type="text" required placeholder="Imię" name="name" />
           <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
-          <button>Submit</button>
+          <textarea rows={8} placeholder="Wiadomość" name="message" />
+          <button>Wyślij</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>
