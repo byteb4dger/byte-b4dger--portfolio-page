@@ -18,13 +18,13 @@ const Navbar = () => {
         </motion.span>
 
         <div className="social">
-          <a href="#">
+          <a href="https://www.facebook.com/piotr.gulaszewski.56">
             <FaFacebook />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/RaduchaPiotr">
             <FaTwitter />
           </a>
-          <a href="#">
+          <a href="https://github.com/byteb4dger?tab=repositories">
             <FaGithub />
           </a>
         </div>
